@@ -38,8 +38,8 @@ margin: 0px;
     padding: 10px;
     margin: 50px;
     font-size: 25px;
-    animation: cadastro_fadeIn 2s;
-    animation-delay: 2s;
+    animation: cadastro_fadeIn 1s;
+    animation-delay: 2.25s;
     animation-fill-mode: forwards;
     opacity: 0;
 
@@ -51,24 +51,27 @@ margin: 0px;
 
 .logo
 {
-animation: backInDown 1s;
 width: 160px;
 height: 160px;
-animation: logo 1s; 
+animation: logo 2s;
+animation-fill-mode: forwards; 
 }
     @keyframes logo {
         from {
-            transform: translateY(-110vh);
+            transform: translateY(-50vh);
         }    
+        50% {
+            transform: translateY(2vh);
+        }
         to {
             transform: translateY(0vh);
         }
     }
 
 
+
 .Titulo
 {
-    animation-fill-mode: forwards;
     font-size: 45px;
     font-family: 'lovelo','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: center;
@@ -77,8 +80,8 @@ animation: logo 1s;
     align-content: center;
     position:absolute ;
     top: 190px;
-    animation: titulo_fadeIn 2s;
-    animation-delay: 1s;
+    animation: titulo_fadeIn 1s;
+    animation-delay: 1.75s;
     animation-fill-mode: forwards;
     opacity: 0;
 }
