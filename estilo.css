@@ -41,20 +41,27 @@ margin: 0px;
 }
 .logo
 {
+animation: backInDown 1s;
 width: 160px;
 height: 160px;
-animation: logo 0.5s infinite alternate linear;
+animation: logo 1s; 
 }
-@keyframes logo
-        {
-            0%   { rotate: 0deg; }
-            50% {rotate:-10deg}
-            100% { rotate: 10deg;  }
+    @keyframes logo {
+        from {
+            transform: translateY(-110vh);
+        }    
+        to {
+            transform: translateY(0vh);
         }
+    }
 
 
 .Titulo
 {
+    animation: titulo_cor 2s;
+    animation-delay: 1s;
+    color: rgb(98, 131, 196);
+    animation-fill-mode: forwards;
     font-size: 45px;
     font-family: 'lovelo','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     justify-content: center;
@@ -62,8 +69,14 @@ animation: logo 0.5s infinite alternate linear;
     align-items: center;
     align-content: center;
     position:absolute ;
-    top: 210px;
+    top: 190px;
 }
+    @keyframes titulo_cor {
+        0% { color: rgb(98, 131, 196) }
+        100% { color: black; }
+    }
+
+
 .po
 {
     margin-top: 20vh;
