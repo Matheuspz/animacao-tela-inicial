@@ -22,6 +22,7 @@ margin: 0px;
 .cadastro
 {
     background-color: snow;
+    font-family: 'lovelo','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     height: 35px;
     width: 223px;
     border-radius: 20px;
@@ -37,8 +38,17 @@ margin: 0px;
     padding: 10px;
     margin: 50px;
     font-size: 25px;
+    animation: cadastro_fadeIn 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 
 }
+        @keyframes cadastro_fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
 .logo
 {
 animation: backInDown 1s;
@@ -58,9 +68,6 @@ animation: logo 1s;
 
 .Titulo
 {
-    animation: titulo_cor 2s;
-    animation-delay: 1s;
-    color: rgb(98, 131, 196);
     animation-fill-mode: forwards;
     font-size: 45px;
     font-family: 'lovelo','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -70,10 +77,14 @@ animation: logo 1s;
     align-content: center;
     position:absolute ;
     top: 190px;
+    animation: titulo_fadeIn 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
-    @keyframes titulo_cor {
-        0% { color: rgb(98, 131, 196) }
-        100% { color: black; }
+    @keyframes titulo_fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
     }
 
 
