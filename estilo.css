@@ -1,7 +1,8 @@
-.body,html{
-width: 100;
+body,html{
+width: 100%;
+height: 100vh;
 overflow: hidden ;
-margin: 0px;
+margin: 0vh;
 
 }
 
@@ -11,16 +12,29 @@ margin: 0px;
     justify-items: center;
     align-items: center;
     align-content: center;
-    display: flex;
-    flex-direction: column;
     width: 100%;
     height: 100vh;
     align-content: space-around;
-    /* position: absolute;
-    */
 
 }
 
+.intro {
+    display: flex;
+    flex-direction: row;
+}
+
+.intro_square
+{
+    background-color: black;
+    width: 100vh;
+    height: 100vh;
+}
+.intro_square_2 {
+    background-color: rgb(54, 42, 42);
+    width: 100vh;
+    height: 100vh;
+}
+/*
 .cadastro
 {
     background-color: snow;
@@ -94,11 +108,12 @@ z-index: 10;
         0% { opacity: 0; }
         100% { opacity: 1; }
     }
-
+*/
+/*
 .circulo {
     height: 500px;
     width: 500px;
-    background-color: /* rgb(98, 131, 196) */ rgb(0, 0, 0);  /* Mudança de cores para teste */
+    background-color: ** rgb(98, 131, 196) ** rgb(0, 0, 0);  ** Mudança de cores para teste **
     border-radius: 50%;
     position: absolute;
     top: -190px;
@@ -123,3 +138,4 @@ z-index: 10;
     margin-top: 15vh;
 
 }
+*/
