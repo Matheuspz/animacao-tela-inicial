@@ -14,26 +14,32 @@ margin: 0vh;
     align-content: center;
     width: 100%;
     height: 100vh;
-    align-content: space-around;
+}
+    .intro {
+        display: flex;
+        flex-direction: row;
+    }
 
-}
+        .logo_intro {
+            
+        }
 
-.intro {
-    display: flex;
-    flex-direction: row;
-}
+                .intro_square
+                {
+                    background-color: black;
+                    width: 100vh;
+                    height: 100vh;
+                }
 
-.intro_square
-{
-    background-color: black;
-    width: 100vh;
-    height: 100vh;
-}
-.intro_square_2 {
-    background-color: rgb(54, 42, 42);
-    width: 100vh;
-    height: 100vh;
-}
+                .intro_square_2 {
+                    background-color: rgb(54, 42, 42);
+                    width: 100vh;
+                    height: 100vh;
+                    display: flex;
+                    justify-content: left;
+                    align-items: center;
+                }
+
 /*
 .cadastro
 {
